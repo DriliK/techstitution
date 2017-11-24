@@ -16,7 +16,8 @@
   <div class="row">
     <div class="col-md-offset-3 col-md-8">
 
-	<form class="form-horizontal" id="border-wait-form">	
+	<form class="form-horizontal" id="border-wait-form">
+  <input type="hidden" id="datetime-now" name="datetime-now"/>	
 	<h3>Forma e regjistrimit te pikave kufitare</h3>
   <fieldset>1</fieldset>
     <div class="form-group ">
@@ -36,14 +37,14 @@
     <div class="form-group">
       <label class="control-label col-xs-3" for="hyrje-min-minuta">Minimum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="hyrje-min-minuta" name="hyrje-min">
+        <input type="number" class="form-control" id="hyrje-min-minuta" name="hyrje-min" min="0" max="59">
       </div>
       <span style="margin-left: -10px;">minuta</span>
     </div>
      <div class="form-group">
       <label class="control-label col-xs-3" for="hyrje-max-minuta">Maximum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="hyrje-max-minuta" name="maximum">
+        <input type="number" class="form-control" id="hyrje-max-minuta" name="maximum" min="0" max="59">
       </div>
       <span style="margin-left: -10px;">minuta</span>
     </div>
@@ -52,14 +53,14 @@
     <div class="form-group">
       <label class="control-label col-xs-3" for="dalje-min-minuta">Minimum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="dalje-min-minuta" name="minimum">
+        <input type="number" class="form-control" id="dalje-min-minuta" name="minimum" min="0" max="59">
       </div>
       <span style="margin-left: -10px;">minuta</span>
     </div>
      <div class="form-group">
       <label class="control-label col-xs-3" for="dalje-max-minuta">Maximum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="dalje-max-minuta" name="maximum">
+        <input type="number" class="form-control" id="dalje-max-minuta" name="maximum" min="0" max="59">
       </div>
       <span style="margin-left: -10px;">minuta</span>
     </div>
@@ -69,14 +70,14 @@
     <div class="form-group">
       <label class="control-label col-xs-3" for="hyrje-min-metra">Minimum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="hyrje-min-metra" name="hyrje-min-metra" >
+        <input type="number" class="form-control" id="hyrje-min-metra" name="hyrje-min-metra" min="0">
       </div>
       <span style="margin-left: -10px;">metra</span>
     </div>
      <div class="form-group">
       <label class="control-label col-xs-3" for="hyrje-max-metra">Maximum:</label>
       <div class="col-xs-5">         
-        <input type="text" class="form-control" id="hyrje-max-metra" name="hyrje-max-metra" >
+        <input type="number" class="form-control" id="hyrje-max-metra" name="hyrje-max-metra" min="0">
       </div>
       <span style="margin-left: -10px;">metra</span>
     </div>
@@ -84,21 +85,21 @@
     <div class="form-group">
       <label class="control-label col-xs-3" for="dalje-min-metra">Minimum:</label>
       <div class="col-xs-5">          
-        <input type="text" class="form-control" id="dalje-min-metra" name="dalje-min-metra">
+        <input type="number" class="form-control" id="dalje-min-metra" name="dalje-min-metra" min="0">
       </div>
       <span style="margin-left: -10px;">metra</span>
     </div>
      <div class="form-group">   	
       <label class="control-label col-xs-3" for="dalje-max-metra">Maximum:</label>
       <div class="col-xs-5">     
-        <input type="text" class="form-control" id="dalje-max-metra" name="dalje-max-metra">
+        <input type="number" class="form-control" id="dalje-max-metra" name="dalje-max-metra" min="0">
       </div>
       <span style="margin-left: -10px;">metra</span>
     </div>
      <div class="form-group">
     <div class="col-xs-offset-3 col-xs-10">
     <button type="submit" class="btn btn-default" name="dergo">Dergo</button>
-    <button class="btn btn-default" name="fshij">Fshij</button>
+    <button type="reset" class="btn btn-default" name="fshij">Fshij</button>
   </div>
 </div>
 	</form>

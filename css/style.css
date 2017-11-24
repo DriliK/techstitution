@@ -1,19 +1,6 @@
-.main{
-	color: brown;
-	font: italic 20px arial, sans-serif;
-	text-align: center;
+body {
+	
 }
-#techstitution{
-	text-transform: uppercase;
-
+.container-fluid{
+	background-color: #3ACD9E;
 }
-#grupi{
-	text-shadow: 3px 2px red;
-}
-// Class
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
